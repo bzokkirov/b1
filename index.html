@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <style>
+        .btn:hover{
+            cursor: pointer;
+        }
+        .btn{
+            position: relative;
+            background-color: red;
+            animation: btn 2s infinite;
+        }
+        .box{
+            position: relative;
+            width: 400px;
+            height: 400px;
+            background-color: red;
+            animation: salom 5s infinite;
+        }
+        @keyframes btn{
+            0%{
+                left: 0;
+                background-color: red;
+            }
+            100%{
+                left: 500px;
+                transform: scale(1.2);
+                background-color: black;
+                color: white;
+            }
+        }
+        @keyframes salom{
+            0%{
+                left: 0;
+                background-color: red;
+            }
+            100%{
+                transform: rotate(360deg);
+                border-radius: 100%;
+                left: 500px;
+                background-color: blue;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header class="bg-primary justify-content-between d-flex align-items-center">
+        <h1 class="p-3">Logo</h1>
+        <ul class="d-flex gap-5">
+            <li class="p-3"><a href="#" class="text-decoration-none text-white">Home</a></li>
+            <li class="p-3"><a href="#" class="text-decoration-none text-white">Home</a></li>
+            <li class="p-3"><a href="#" class="text-decoration-none text-white">Home</a></li>
+        </ul>
+    </header>
+
+    <div class="box">
+        <h1>Hello</h1>
+    </div>
+    <button class="btn p-2">Button</button>
+    <script src="./bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
